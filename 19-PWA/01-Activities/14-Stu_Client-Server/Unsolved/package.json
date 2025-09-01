@@ -1,0 +1,25 @@
+{
+  "name": "14-stu_client-server-unsolved",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "comments": {
+    "comment-start:dev": "TODO: cd's into the client folder and the server folder and runs npm i to install all of the necessary files",
+    "comment-concurrently": "TODO: running a single script from the root saves yuo the time and hassle of installing each indiviual package.json on its own or from split terminals"
+  }
+}
+

@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background: green;
+  height: 60px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+}

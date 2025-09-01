@@ -1,0 +1,18 @@
+<div class="dish-card">
+  <div class="dish-card-header">
+    {{dish_name}}
+  </div>
+
+  <div class="card-body">
+    <p>
+      Description:
+      {{description}}
+      {{#if has_nuts}}
+      Contains Nuts
+      {{/if}}
+    </p>
+<!-- TODO: Use a built-in helper to display "Contains Nuts" if a food item contains nuts.-->
+  </div>
+  
+
+</div>
